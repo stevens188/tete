@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width" />
     <meta name="amp-google-client-id-api" content="googleanalytics" />
 
+    <!-- google tag manager script -->
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+
     <script async="" src="https://cdn.ampproject.org/v0.js"></script>
     <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
 
@@ -1847,6 +1850,31 @@
     </style>
   </head>
   <body>
+
+
+    <!-- Google Tag Manager -->
+    <amp-analytics config="https://www.googletagmanager.com/amp.json?id=GTM-KGRD84T&gtm.url=SOURCE_URL" data-credentials="include"></amp-analytics>
+
+
+    <!-- Analytics GA4 -->
+  	<script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+  <amp-analytics type="gtag" data-credentials="include">
+  <script type="application/json">
+  {
+    "vars" : {
+      "gtag_id": "<G-2LJ8PQ9156>",
+      "config" : {
+        "<GA_MEASUREMENT_ID>": { "groups": "default" }
+      }
+    }
+  }
+  </script>
+  </amp-analytics>
+    <!-- Analytics GA4 -->
+
+
+
+
     <!-- Start Navbar -->
     <header
       class="ampstart-headerbar fixed flex justify-start items-center top-0 left-0 right-0 pl2 pr4"
