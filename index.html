@@ -2,8 +2,6 @@
   <head>
 
 
-<!-- AMP Analytics GA4 -->
-<script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
 
 <!-- google tag manager script -->
 <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
@@ -1863,24 +1861,23 @@
     <amp-analytics config="https://www.googletagmanager.com/amp.json?id=GTM-KGRD84T&gtm.url=SOURCE_URL" data-credentials="include"></amp-analytics>
 
 
-    <!-- Analytics GA4 -->
-  	<script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
-  <amp-analytics type="gtag" data-credentials="include">
-  <script type="application/json">
-  {
-    "vars" : {
-      "gtag_id": "<G-2LJ8PQ9156>",
-      "config" : {
-        "<GA_MEASUREMENT_ID>": { "groups": "default" }
-      }
-    }
-  }
-  </script>
-  </amp-analytics>
-    <!-- Analytics GA4 -->
-
-
-
+    <!-- Facebook Pixel Analytics tracking -->
+  	<amp-analytics type="facebookpixel" id="facebook-pixel">
+  	    <script type="application/json">
+  	    {
+  	        "vars": {
+  	            "pixelId": "3448140762079141"
+  	        },
+  	        "triggers": {
+  	            "trackPageview": {
+  	                "on": "visible",
+  	                "request": "pageview"
+  	            }
+  	        }
+  	    }
+  	    </script>
+  	</amp-analytics>
+  	<!-- Facebook Pixel Analytics tracking -->
 
     <!-- Start Navbar -->
     <header
